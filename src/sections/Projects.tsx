@@ -17,8 +17,8 @@ export default function Projects() {
     {
       name: 'Personal Portfolio',
       image: '/portfolio.png',
-      githubUrl: 'https://github.com/sglkbrk/sinnalR-Chat-vueapp',
-      projectUrl: 'https://chat.buraksaglik.com/'
+      githubUrl: 'https://github.com/sglkbrk/burak-portfolio-website',
+      projectUrl: 'https://buraksaglik.com/'
     }
   ];
   return (

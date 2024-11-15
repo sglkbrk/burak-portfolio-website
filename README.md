@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Project 🌐
 
-## Getting Started
+This is a personal portfolio project built with the following technologies:
 
-First, run the development server:
+- **[Next.js 15](https://nextjs.org/)**: The React Framework for Production.
+- **[React 18](https://reactjs.org/)**: A JavaScript library for building user interfaces.
+- **[Framer Motion 11](https://www.framer.com/motion/)**: An animation library for React.
+- **[Tailwind CSS](https://tailwindcss.com/)**: A utility-first CSS framework.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Interactive Design**: Smooth animations with Framer Motion.
+- **Responsive Layout**: Fully optimized for mobile, tablet, and desktop screens.
+- **Modern Tech Stack**: Built with Next.js and Tailwind CSS for performance and scalability.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📸 Screenshot
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![Project Screenshot](./screenshot.png)
 
-## Learn More
+## 🛠 Installation and Setup
 
-To learn more about Next.js, take a look at the following resources:
+To get started with this project, follow these steps:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   git clone https://github.com/sglkbrk/burak-portfolio-website.git
+   ```
 
-## Deploy on Vercel
+2. Navigate to the project directory:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   cd burak-portfolio-website
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit:
+   ```bash
+   http://localhost:3000
+   ```
+
+## 🏗 Build for Production
+
+To build the project for production, run:
+`bash
+    npm run build
+    `
+
+Then start the production server with:
+`bash
+    npm start
+    `
+
+## 🌍 Live Demo
+
+Check out the live version of the project here:  
+[https://buraksaglik.com/](https://buraksaglik.com/)
+
+## 📂 Folder Structure
