@@ -66,5 +66,3 @@ Then start the production server with:
 
 Check out the live version of the project here:  
 [https://buraksaglik.com/](https://buraksaglik.com/)
-
-## 📂 Folder Structure
