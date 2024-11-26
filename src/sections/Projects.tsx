@@ -19,6 +19,12 @@ export default function Projects() {
       image: '/portfolio.png',
       githubUrl: 'https://github.com/sglkbrk/burak-portfolio-website',
       projectUrl: 'https://buraksaglik.com/'
+    },
+    {
+      name: 'Bs Note',
+      image: '/bsnote.png',
+      githubUrl: 'https://github.com/sglkbrk/bsnotes',
+      projectUrl: 'https://bsnote.buraksaglik.com/'
     }
   ];
   return (
