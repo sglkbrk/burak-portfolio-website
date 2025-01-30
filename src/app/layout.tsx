@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Background from '@/components/Background';
 import Footer from '@/components/Footer';
 import Head from 'next/head';
+import Script from 'next/script';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
@@ -44,19 +45,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <Head>
-        <>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-11GN8Y8ER7"></script>
-          <script id="google-analytics">
-            {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-11GN8Y8ER7');
-        `}
-          </script>
-        </>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       </Head>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-11GN8Y8ER7" />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-11GN8Y8ER7');
+          `}
+      </Script>
       <body className={montserrat.className}>
         <Header />
         <Background />
