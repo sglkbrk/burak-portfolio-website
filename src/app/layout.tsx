@@ -5,7 +5,6 @@ import Header from '@/components/Header';
 import Background from '@/components/Background';
 import Footer from '@/components/Footer';
 import Head from 'next/head';
-import Script from 'next/script';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
