@@ -47,15 +47,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <Head>
         <>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-          <Script async src="https://www.googletagmanager.com/gtag/js?id=G-11GN8Y8ER7"></Script>
-          <Script id="google-analytics" strategy="afterInteractive">
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-11GN8Y8ER7"></script>
+          <script id="google-analytics">
             {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-11GN8Y8ER7');
         `}
-          </Script>
+          </script>
         </>
       </Head>
       <body className={montserrat.className}>
