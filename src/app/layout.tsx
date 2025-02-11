@@ -46,6 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <Head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+        <meta name="google-adsense-account" content="ca-pub-7285329314913241"></meta>
       </Head>
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-11GN8Y8ER7" />
       <Script id="google-analytics" strategy="afterInteractive">
@@ -57,7 +58,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}
       </Script>
       <body className={montserrat.className}>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7285329314913241"></script>
         <Header />
         <Background />
         <main className="container lg:px-28">{children}</main>
