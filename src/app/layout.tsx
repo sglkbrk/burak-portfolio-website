@@ -57,6 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}
       </Script>
       <body className={montserrat.className}>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7285329314913241"></script>
         <Header />
         <Background />
         <main className="container lg:px-28">{children}</main>
