@@ -30,6 +30,13 @@ export const metadata: Metadata = {
         height: 800
       }
     ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Burak Sağlık | Personal',
+    description:
+      "Explore Burak Sağlık's personal portfolio showcasing creative web development projects, modern UI/UX designs, and dynamic applications built with React, TypeScript, and Tailwind CSS. Let's collaborate!",
+    images: ['/IMG_0419.jpeg']
   }
 };
 
