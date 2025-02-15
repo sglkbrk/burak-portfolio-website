@@ -34,7 +34,7 @@ export default function About() {
           <Image
             width={400}
             height={500}
-            src="/IMG_0419.jpeg"
+            src="/user.jpeg"
             alt="Burak Sağlık"
             className="w-[350px] min-w-[300px] max-h-[400px] object-cover rounded-xl transition-all hover:scale-110 "
           />
