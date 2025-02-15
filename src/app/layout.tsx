@@ -33,7 +33,7 @@ export const metadata: Metadata = {
       "Explore Burak Sağlık's personal portfolio showcasing creative web development projects, modern UI/UX designs, and dynamic applications built with React, TypeScript, and Tailwind CSS. Let's collaborate!",
     images: [
       {
-        url: '/IMG_0419.jpeg',
+        url: '/user.jpeg',
         alt: "Burak Sağlık's Portrait",
         width: 640,
         height: 800
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: 'Burak Sağlık | Personal',
     description:
       "Explore Burak Sağlık's personal portfolio showcasing creative web development projects, modern UI/UX designs, and dynamic applications built with React, TypeScript, and Tailwind CSS. Let's collaborate!",
-    images: ['/IMG_0419.jpeg']
+    images: ['/user.jpeg']
   }
 };
 
