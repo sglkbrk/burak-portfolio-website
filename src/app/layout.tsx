@@ -6,6 +6,15 @@ import Background from '@/components/Background';
 import Footer from '@/components/Footer';
 import Head from 'next/head';
 import Script from 'next/script';
+import localFont from 'next/font/local';
+
+const goldenSignature = localFont({
+  src: '/fonts/GoldenSignature.otf',
+  weight: '400', // Özel fontlarda genelde tek bir weight olur
+  style: 'normal',
+  variable: '--font-golden-signature',
+  display: 'swap'
+});
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
@@ -63,8 +72,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', 'G-11GN8Y8ER7');
           `}
       </Script>
-      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7285329314913241"></Script>
-      <body className={montserrat.className}>
+      <Script
+        strategy="afterInteractive"
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7285329314913241"
+      ></Script>
+      <body className={`${montserrat.className} ${goldenSignature.variable}`}>
         <Header />
         <Background />
         <main className="container lg:px-28">{children}</main>

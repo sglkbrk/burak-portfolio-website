@@ -74,10 +74,7 @@
     @apply bg-background text-foreground;
   }
 }
-@font-face {
-  font-family: 'GoldenSignature';
-  src: url('../assets/GoldenSignature.otf');
-}
+
 h1 {
   font-size: 2rem;
   font-weight: 700;

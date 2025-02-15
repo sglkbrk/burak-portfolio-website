@@ -12,6 +12,9 @@ export default {
       }
     },
     extend: {
+      fontFamily: {
+        golden: 'var(--font-golden-signature)' // Fontu Tailwind'e ekledik
+      },
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)'
