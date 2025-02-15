@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="container flex flex-col items-center justify-between md:flex-row">
           <div className={cn('text-5xl drop-shadow-2xl')}></div>
           <div className="md:text-base">
-            <p className="text-xs md:text-sm mb-2">DesignerBy @BurakSağlık</p>
+            <h1 className="text-xs font-light md:text-sm mb-2">DesignerBy @BurakSağlık</h1>
           </div>
           <div className="nav-links flex gap-x-8 text-xs md:text-base"></div>
         </div>

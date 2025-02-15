@@ -28,6 +28,9 @@ export default function About() {
             technological advancements.
           </p>
         </MotionDiv>
+        <h1 className="text-xs md:text-[2rem] text-white font-golden">
+          Burak Sağlık Frontend & Mobile Developer Photographer React.js Next.js JavaScript TypeScript{' '}
+        </h1>
       </div>
       <div className="lg:w-1/3 order-1 md:order-2">
         <MotionDiv delayOffset={0.4}>

@@ -15,6 +15,9 @@ export default function contact() {
           opportunities.
         </p>
       </MotionDiv>
+      <MotionDiv delayOffset={0.2}>
+        <h1 className="text-[1.5rem] md:text-[2rem] text-white font-golden">Burak Sağlık</h1>
+      </MotionDiv>
       <MotionList delayOffset={0}>
         <ContactItem title="Instagram" icon={faInstagram} bgColor="bg-yellow-500" link="https://www.instagram.com/brksglk" />
         <ContactItem title="Github" icon={faGithub} bgColor="bg-purple-500" link="https://github.com/sglkbrk" />
