@@ -1,4 +1,3 @@
-import { a } from 'framer-motion/client';
 import MotionDiv from '../components/MotionDiv';
 import Project from '@/components/Project';
 export default function Projects() {
