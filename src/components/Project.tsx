@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
-import { faStaylinked, faGithub, faAppStore, faGooglePay } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faAppStore, faGooglePay, faChrome } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
 
 export default function Project({
@@ -43,7 +43,7 @@ export default function Project({
                 className="text-white text-[11px] font-effra uppercase tracking-6 hidden group-hover:block"
               >
                 <FontAwesomeIcon
-                  className="bg-gray-500  hover:bg-gray-800/90 w-10 h-10 p-2 flex items-center justify-center rounded-full text-white"
+                  className="bg-blue-500  hover:bg-blue-800/90 w-10 h-10 p-2 flex items-center justify-center rounded-full text-white"
                   icon={faAppStore}
                 />
               </Link>
@@ -55,7 +55,7 @@ export default function Project({
                 className="text-white text-[11px] font-effra uppercase tracking-6 hidden group-hover:block"
               >
                 <FontAwesomeIcon
-                  className="bg-gray-500  hover:bg-gray-800/90 w-10 h-10 p-2 flex items-center justify-center rounded-full text-white"
+                  className="bg-yellow-500  hover:bg-yellow-800/90 w-10 h-10 p-2 flex items-center justify-center rounded-full text-white"
                   icon={faGooglePay}
                 />
               </Link>
@@ -68,7 +68,7 @@ export default function Project({
               >
                 <FontAwesomeIcon
                   className="bg-yellow-500  hover:bg-yellow-800/90 w-10 h-10 p-2 flex items-center justify-center rounded-full text-white"
-                  icon={faStaylinked}
+                  icon={faChrome}
                 />
               </Link>
             )}
