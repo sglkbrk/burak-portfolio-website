@@ -1,7 +1,13 @@
+import { a } from 'framer-motion/client';
 import MotionDiv from '../components/MotionDiv';
 import Project from '@/components/Project';
 export default function Projects() {
   const projects = [
+    {
+      name: 'Goalio',
+      image: '/Goalio.jpg',
+      appStoreUrl: 'https://apps.apple.com/tr/app/goalio/id6749142434?l=tr'
+    },
     {
       name: 'Vue Chat',
       image: '/chat.png',
@@ -50,6 +56,8 @@ export default function Projects() {
                 image={project.image}
                 githubUrl={project.githubUrl}
                 projectUrl={project.projectUrl}
+                appStoreUrl={project.appStoreUrl}
+                playStoreUrl={project.playStoreUrl}
               />
             ))}
             {/* </MotionList> */}
