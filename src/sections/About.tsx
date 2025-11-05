@@ -4,10 +4,10 @@ import MotionDiv from '../components/MotionDiv';
 import Image from 'next/image';
 export default function About() {
   return (
-    <section id="about" className="my-8 md:my-20  flex flex-col   md:flex-row  my-8  md:my-20">
+    <section id="about" className="my-8 md:my-20 flex flex-col md:flex-row">
       <div className="flex flex-col  lg:w-2/3 space-y-6 order-2 md:order-1">
         <MotionDiv delayOffset={0.2}>
-          <h1 className="text-[1.5rem] md:text-[2rem] font-bold">About Me</h1>
+          <h2 className="text-[1.5rem] md:text-[2rem] font-bold">About Me</h2>
         </MotionDiv>
         <MotionDiv delayOffset={0.4}>
           <p className="text-gray-500 ">
@@ -28,9 +28,9 @@ export default function About() {
             technological advancements.
           </p>
         </MotionDiv>
-        <h1 className="text-xs md:text-[2rem] text-white font-golden">
+        <p className="text-xs md:text-[2rem] text-white font-golden">
           Burak Sağlık Frontend & Mobile Developer Photographer React.js Next.js JavaScript TypeScript{' '}
-        </h1>
+        </p>
       </div>
       <div className="lg:w-1/3 order-1 md:order-2">
         <MotionDiv delayOffset={0.4}>
@@ -38,8 +38,9 @@ export default function About() {
             width={400}
             height={500}
             src="/user.jpeg"
-            alt="Burak Sağlık"
+            alt="Burak Sağlık - Web Developer and Photographer"
             className="w-[350px] min-w-[300px] max-h-[400px] object-cover rounded-xl transition-all hover:scale-110 "
+            loading="lazy"
           />
         </MotionDiv>
       </div>

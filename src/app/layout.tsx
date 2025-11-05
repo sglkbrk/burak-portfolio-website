@@ -4,7 +4,6 @@ import { Montserrat } from 'next/font/google';
 import Header from '@/components/Header';
 import Background from '@/components/Background';
 import Footer from '@/components/Footer';
-import Head from 'next/head';
 import Script from 'next/script';
 import localFont from 'next/font/local';
 
@@ -19,50 +18,137 @@ const goldenSignature = localFont({
 const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Burak Sağlık | Personal',
+  title: {
+    default: 'Burak Sağlık | Web Developer & Photographer',
+    template: '%s | Burak Sağlık'
+  },
   metadataBase: new URL('https://www.buraksaglik.com'),
   alternates: {
     canonical: '/'
   },
   authors: [{ name: 'Burak Sağlık', url: 'https://github.com/sglkbrk' }],
+  creator: 'Burak Sağlık',
+  publisher: 'Burak Sağlık',
   description:
     "Explore Burak Sağlık's personal portfolio showcasing creative web development projects, modern UI/UX designs, and dynamic applications built with React, TypeScript, and Tailwind CSS. Let's collaborate!",
+  keywords: [
+    'Burak Sağlık',
+    'Web Developer',
+    'Frontend Developer',
+    'React Developer',
+    'TypeScript',
+    'Next.js',
+    'Photographer',
+    'Portfolio',
+    'SAP Fiori',
+    'Vue.js',
+    'JavaScript',
+    'Tailwind CSS',
+    'UI/UX Designer',
+    'Turkey Developer'
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
+    }
+  },
   openGraph: {
-    title: 'Burak Sağlık | Personal',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.buraksaglik.com',
+    siteName: 'Burak Sağlık Portfolio',
+    title: 'Burak Sağlık | Web Developer & Photographer',
     description:
       "Explore Burak Sağlık's personal portfolio showcasing creative web development projects, modern UI/UX designs, and dynamic applications built with React, TypeScript, and Tailwind CSS. Let's collaborate!",
     images: [
       {
-        url: '/user.jpeg',
+        url: 'https://www.buraksaglik.com/user.jpeg',
         alt: "Burak Sağlık's Portrait",
         width: 640,
-        height: 800
+        height: 800,
+        type: 'image/jpeg'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Burak Sağlık | Personal',
+    title: 'Burak Sağlık | Web Developer & Photographer',
     description:
       "Explore Burak Sağlık's personal portfolio showcasing creative web development projects, modern UI/UX designs, and dynamic applications built with React, TypeScript, and Tailwind CSS. Let's collaborate!",
-    images: ['/user.jpeg']
+    images: ['https://www.buraksaglik.com/user.jpeg'],
+    creator: '@brksglk'
+  },
+  verification: {
+    google: 'google80648bdde75cfa94'
+  },
+  category: 'Portfolio',
+  classification: 'Personal Website',
+  other: {
+    'theme-color': '#000000'
   }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const structuredData = {
+  const personStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Burak Sağlık',
     jobTitle: 'Web Developer & Photographer',
-    url: 'https://buraksaglik.com/',
-    sameAs: ['https://github.com/sglkbrk', 'https://www.instagram.com/brksglk', 'https://www.linkedin.com/in/burak-saglik/']
+    url: 'https://www.buraksaglik.com',
+    image: 'https://www.buraksaglik.com/user.jpeg',
+    sameAs: ['https://github.com/sglkbrk', 'https://www.instagram.com/brksglk', 'https://www.linkedin.com/in/burak-saglik/'],
+    knowsAbout: [
+      'Web Development',
+      'Frontend Development',
+      'React',
+      'TypeScript',
+      'Next.js',
+      'Vue.js',
+      'SAP Fiori',
+      'JavaScript',
+      'Photography'
+    ],
+    alumniOf: {
+      '@type': 'CollegeOrUniversity',
+      name: 'Sivas Cumhuriyet University'
+    },
+    worksFor: {
+      '@type': 'Organization',
+      name: 'Detaysoft'
+    }
   };
+
+  const websiteStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Burak Sağlık Portfolio',
+    url: 'https://www.buraksaglik.com',
+    author: {
+      '@type': 'Person',
+      name: 'Burak Sağlık'
+    },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://www.buraksaglik.com/?s={search_term_string}'
+      },
+      'query-input': 'required name=search_term_string'
+    }
+  };
+
   return (
     <html lang="en">
-      <Head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-      </Head>
+      <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personStructuredData) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteStructuredData) }} />
+      </head>
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-11GN8Y8ER7" />
       <Script id="google-analytics" strategy="afterInteractive">
         {`

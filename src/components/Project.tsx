@@ -22,7 +22,13 @@ export default function Project({
     <div className="group rounded-xl border-none p-5 text-center shadow-none transition-all duration-200 ease-linear hover:scale-110 hover:drop-shadow-xl">
       <div className="flex flex-col items-center gap-2">
         <div className="group relative  overflow-hidden flex items-center  justify-center  w-[160px] h-[160px] rounded-full  border border-black-500">
-          <Image fill alt={name} src={image} className="object-cover  object-center" />
+          <Image 
+            fill 
+            alt={`${name} project screenshot`} 
+            src={image} 
+            className="object-cover  object-center"
+            loading="lazy"
+          />
           <div className="flex flex-row items-center justify-center z-10 absolute    space-x-6">
             {githubUrl && (
               <Link

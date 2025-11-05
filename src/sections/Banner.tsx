@@ -15,19 +15,23 @@ export default function Banner() {
         <div className="w-[200px] h-[200px]  rounded-full overflow-hidden justify-center items-center ">
           <video
             src="/video.mp4"
+            poster="/user.jpeg"
             style={{ objectFit: 'cover', width: '100%', height: '100%', backgroundColor: 'white' }}
             autoPlay
             loop
             muted
+            playsInline
+            preload="metadata"
+            aria-label="Burak Sağlık introduction video"
           ></video>
         </div>
       </MotionDiv>
-      <h1 className="mb-4 text-[1.5rem] md:text-[2rem] font-bold ">
+      <p className="mb-4 text-[1.5rem] md:text-[2rem] font-bold ">
         <MotionDiv delayOffset={0.8}>Developer 🧑‍💻</MotionDiv>
-      </h1>
-      <h1 className="mb-4 text-[1.7rem] md:text-[2.1rem] font-bold">
+      </p>
+      <p className="mb-4 text-[1.7rem] md:text-[2.1rem] font-bold">
         <MotionDiv delayOffset={1}>Photographer 📷</MotionDiv>
-      </h1>
+      </p>
       <div className="space-y-4">
         <MotionDiv delayOffset={1.1}>
           <p>Welcome to my personal page!</p>
