@@ -41,6 +41,7 @@ export default function About() {
             alt="Burak Sağlık - Web Developer and Photographer"
             className="w-[350px] min-w-[300px] max-h-[400px] object-cover rounded-xl transition-all hover:scale-110 "
             loading="lazy"
+            unoptimized
           />
         </MotionDiv>
       </div>
