@@ -3,6 +3,11 @@ import Project from '@/components/Project';
 export default function Projects() {
   const projects = [
     {
+      name: 'FastLogin - Google Chrome Extension',
+      image: '/fastlogin.png',
+      projectUrl: 'https://chromewebstore.google.com/detail/auto-login-extension/hinfnpfmpgklljmfpbegnbfmlofpmkfk?hl=tr'
+    },
+    {
       name: 'Goalio',
       image: '/Goalio.jpg',
       appStoreUrl: 'https://apps.apple.com/tr/app/goalio/id6749142434?l=tr',
