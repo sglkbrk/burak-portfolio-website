@@ -1,11 +1,35 @@
-version: '3'
+version: '3.9'
 
 services:
   next:
-    build: .
-    container_name: next_app
-    restart: always
-    ports:
-      - '4000:4000'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: buraksaglik_next_app
+
+    restart: unless-stopped
+    user: '1000:1000'
+
     environment:
       NODE_ENV: production
+      PORT: 4000
+      HOST: 127.0.0.1
+
+    # Dış dünya erişemesin → sadece host localhost'ta çalışır
+    ports:
+      - '127.0.0.1:4000:4000'
+
+    read_only: true
+
+    tmpfs:
+      - /tmp
+      - /app/.next/cache
+
+    volumes:
+      - ./logs:/app/logs
+
+    security_opt:
+      - no-new-privileges:true
+
+    cap_drop:
+      - ALL
