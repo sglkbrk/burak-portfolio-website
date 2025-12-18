@@ -3,6 +3,11 @@ import Project from '@/components/Project';
 export default function Projects() {
   const projects = [
     {
+      name: 'Finance Portfolio',
+      image: '/finance-portfolio.png',
+      projectUrl: 'https://portfolio.buraksaglik.com/dashboard'
+    },
+    {
       name: 'FastLogin - Google Chrome Extension',
       image: '/fastlogin.png',
       projectUrl: 'https://chromewebstore.google.com/detail/auto-login-extension/hinfnpfmpgklljmfpbegnbfmlofpmkfk?hl=tr'
