@@ -5,7 +5,7 @@ export default function Projects() {
     {
       name: 'Finance Portfolio',
       image: '/finance-portfolio.png',
-      projectUrl: 'https://portfolio.buraksaglik.com/dashboard'
+      projectUrl: 'https://portfolio.buraksaglik.com'
     },
     {
       name: 'FastLogin - Google Chrome Extension',
