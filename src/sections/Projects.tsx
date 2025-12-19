@@ -3,7 +3,7 @@ import Project from '@/components/Project';
 export default function Projects() {
   const projects = [
     {
-      name: 'Finance Portfolio',
+      name: 'Finance Portfolio Tracker',
       image: '/finance-portfolio.png',
       projectUrl: 'https://portfolio.buraksaglik.com'
     },
