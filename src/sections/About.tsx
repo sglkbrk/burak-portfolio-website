@@ -7,29 +7,29 @@ export default function About() {
     <section id="about" className="my-8 md:my-20 flex flex-col md:flex-row">
       <div className="flex flex-col  lg:w-2/3 space-y-6 order-2 md:order-1">
         <MotionDiv delayOffset={0.2}>
-          <h2 className="text-[1.5rem] md:text-[2rem] font-bold">About Me</h2>
+          <h2 className="text-[1.5rem] md:text-[2rem] font-bold">Hakkımda</h2>
         </MotionDiv>
         <MotionDiv delayOffset={0.4}>
           <p className="text-gray-500 ">
-            Hello there! I am Burak Sağlık, a Web Developer and Photographer based in Turkey. I graduated as the top of my class from Sivas
-            Cumhuriyet University in 2018 with a degree in Management Information Systems 🎓.
+            Merhaba! Ben Burak Sağlık, Türkiye de yaşayan bir Web Geliştirici ve Fotoğrafçıyım. 2018 yılında Sivas Cumhuriyet Üniversitesi
+            Yönetim Bilişim Sistemleri bölümünden bölüm birincisi olarak mezun oldum 🎓.
           </p>
         </MotionDiv>
         <MotionDiv delayOffset={0.5}>
           <p className="text-gray-500 ">
-            I started my career in 2016 at Detaysoft as a Web and Mobile Developer. During this time, I gained experience working as a
-            Frontend Developer, Mobile Developer, and SAP Fiori Developer, contributing to both web and mobile projects.
+            Kariyerime 2016 yılında Detaysoft ta Frontend, Mobil ve SAP Fiori Geliştirici olarak başladım. Bu süreçte hem kurumsal hem de
+            kullanıcı odaklı projelerde geniş bir deneyim edindim.
           </p>
         </MotionDiv>
         <MotionDiv delayOffset={0.6}>
           <p className="text-gray-500 ">
-            I develop dynamic applications using modern technologies such as React.js and Vue.js, while also creating enterprise solutions
-            with SAP Fiori. I continue my professional journey at Detaysoft, aiming to add value to my projects by keeping up with
-            technological advancements.
+            Şu an Innova da çalışmaktayım. React.js, Next.js ve SAP Fiori ile kurumsal ve kullanıcı odaklı projeler geliştiriyorum.
+            Öğrenmeyi bırakmadığım sürece iyi iş çıkarabileceğime inanıyorum.
           </p>
         </MotionDiv>
         <p className="text-xs md:text-[2rem] text-white font-golden">
-          Burak Sağlık Frontend & Mobile Developer Photographer React.js Next.js JavaScript TypeScript{' '}
+          Burak Sağlık Frontend & Mobile Developer Photographer React.js Next.js JavaScript TypeScript SAP Fiori ui/ux burak sağlik burak
+          sağlık{' '}
         </p>
       </div>
       <div className="lg:w-1/3 order-1 md:order-2">

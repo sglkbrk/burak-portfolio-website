@@ -11,8 +11,8 @@ export default function contact() {
       </MotionDiv>
       <MotionDiv>
         <p>
-          Feel free to get in touch! You can use the contact information below for any questions, suggestions, or collaboration
-          opportunities.
+          Bir fikrin mi var, bir şey sormak mı istiyorsun? Her zaman açığım. Bana ulaşmak için aşağıdaki platformlardan birini
+          kullanabilirsin. İletişimde kalalım!
         </p>
       </MotionDiv>
       <MotionDiv delayOffset={0.2}>

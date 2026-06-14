@@ -120,7 +120,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     },
     worksFor: {
       '@type': 'Organization',
-      name: 'Detaysoft'
+      name: 'İnnova'
     }
   };
 
