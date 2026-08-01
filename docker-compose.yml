@@ -13,11 +13,12 @@ services:
     environment:
       NODE_ENV: production
       PORT: 4000
-      HOST: 127.0.0.1
+      HOST: 0.0.0.0 # KRİTİK: Konteyner dışından (NPM'den) istek alabilmek için 0.0.0.0 olmalı!
 
-    # Dış dünya erişemesin → sadece host localhost'ta çalışır
-    ports:
-      - '127.0.0.1:4000:4000'
+    # AÇIKLAMA: NPM ile aynı Docker ağında olduğunuz için 'ports' bölümüne HİÇ GEREK YOKTUR.
+    # Bu sayede 4000 portu sunucunun kendisine bile bağlanmaz, dış dünyaya %100 kapalı olur.
+    # ports:
+    #   - '127.0.0.1:4000:4000'
 
     read_only: true
 
@@ -31,5 +32,12 @@ services:
     security_opt:
       - no-new-privileges:true
 
-    cap_drop:
+    cap_drop: 
       - ALL
+
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    external: true
